@@ -1,0 +1,4 @@
+1. You can use the find command with grep and -exec to do other commands
+with every file matching the ones you find.
+2. find has a -mmin +60 -mmin -90 argument to specify last modified
+dates that match.

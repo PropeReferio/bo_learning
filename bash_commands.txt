@@ -1,0 +1,17 @@
+cd - | go to previous directory
+ctrl + l | clear screen, but you can still scroll back up.
+reset | like opening a new terminal. Will update env vars.
+pushd | change dir, add cwd to the stack.
+popd | take the last dir off the stack, and return to it.
+ctrl + z | minimize a program like vi in the foreground
+fg | return a minimized program to the foreground
+!! | refers to last command. `sudo !!` is useful when you forgot
+to elevate priveleges.
+history, then !97 | run the command that was #97 in your history
+HISTTIMEFORMAT="%Y-%m-%d %T " | set this to get datetime when you run history
+ctrl + +, ctrl + - | change font size
+ctrl + u | delete everything on your line
+ctrl + a, ctrl + e | go to start/end of line
+&& vs. ; | both chain commands, but if the first command errors, ; will allow the second command to work
+tail -f any.logfile | -f will keep the tail up, and will update as the log fills with info.
+mount | column -t | pipe any command into column -t to put it into columns. Will be helpful to zoom out with ctrl + - to see the data.

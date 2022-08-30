@@ -1,0 +1,12 @@
+dependency injection separates creation from use, by passing the created object in as an argument.
+This makes the code more easily testable.
+
+Dependency injection: passing a customers dict to a function as an argument,
+rather than letting that function work on a CUSTOMERS dict constant.
+
+Similarly, don't create the object you use in your function... create the object outside it,
+and pass it into the function as an argument. This also separates creation from use.
+
+Dependency inversion: you make a protocol or an ABC which is the type of parameter received by the
+function/method, and this allows for "least knowledge." It also allows you to pass different kinds
+of objects following the ABC or Protocol.

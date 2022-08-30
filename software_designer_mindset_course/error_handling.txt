@@ -1,0 +1,5 @@
+It seems that giving a class an __enter__ and __exit__ magic method
+enables you to use the object as a context manager.
+
+Don't go overboard with catching all exceptions. Only handle it 
+if you can actually do something.

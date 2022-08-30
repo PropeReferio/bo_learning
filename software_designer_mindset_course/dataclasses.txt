@@ -1,0 +1,12 @@
+Use a dataclass when:
+1) You'll make few methods
+2) It's more a collection of data than a collection of 
+behaviours
+3) You have a bunch of instance variables/attributes
+4) It's like a row of a DB
+
+Use a class when:
+1) You need a custom initializer
+2) don't care about the __repr__ method
+3) It's more a collection of behaviours than of
+data

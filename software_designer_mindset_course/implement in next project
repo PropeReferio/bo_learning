@@ -1,0 +1,5 @@
+1. Dataclasses
+2. Type hinting
+3. Inheritance (if justified)
+
+Looks like Enums can be used for services in invoice_uploads

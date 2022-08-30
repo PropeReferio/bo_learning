@@ -1,0 +1,11 @@
+Mixins are complicated, because if you change the order of
+inheritance/class parameters, things change a lot.
+
+Arjan doesn't recommend mixins because:
+1) Type hints get screwed up
+2) Using it limits OOP features. You can't add instance variables, etc.
+3) Juniors won't know how to use them, and will screw them up.
+4) Are @dataclasses compatible? Not sure.
+5) If you need to add an instance variable, you're stuck. Refactoring becomes hard.
+
+Just use composition, says Arjan.

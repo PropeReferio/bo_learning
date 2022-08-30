@@ -1,0 +1,6 @@
+1. Document what you learn. Take notes on different ideas.
+2. Discuss your design decisions with other developers.
+3. Make a code review of someone else's code. Look at how it could be
+improved, and why that will be helpful for the next iteration.
+4. It's very valuable to be able to articulate clearly the benefit
+of one design pattern over another.

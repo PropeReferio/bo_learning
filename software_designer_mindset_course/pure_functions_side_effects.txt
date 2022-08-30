@@ -1,0 +1,16 @@
+functions with side effects (change things outside)
+their scope) make it hard to test, because... those
+things are outside the scope. Therefore, it can be
+helpful to avoid such side effects.
+
+In contrast, pure functions are easier to test because they
+rely on their inputs (arguments) to return some other result. In
+testing, you control the different inputs.
+
+Dependency injection: passing a customers dict to a function as an argument,
+rather than letting that function work on a CUSTOMERS dict constant.
+
+Similarly, don't create the object you use in your function... create the object outside it,
+and pass it into the function as an argument. This also separates creation from use.
+
+Getting around this complication requires mocking and patching... which works, but is harder.

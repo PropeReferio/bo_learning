@@ -1,0 +1,21 @@
+Content coupling - where something modifies a class object directly
+  - Law of Demeter/Principle of Least Knowledge (specific kind) - when a function
+  needs to know about the properties of an object (can be solved by making
+  the function a class method), a data structure, etc.
+
+global coupling - multiple things pointing to one global constant... if you change
+the constant, everything using it changes. Results in code duplication.
+
+external coupling - depending on an external service, like an API
+
+control coupling - one function controls the flow of another function
+
+stamp coupling - when data structures are coupled. It's bad when you're only using the 
+keys of a dict, and none of the values, in some cases.
+
+data coupling - when methods share data, taking the same arguments. This can be eliminated
+by employing message passing.
+
+import coupling - you imported something
+
+message coupling - passing messages around. Typically it's very light coupling.

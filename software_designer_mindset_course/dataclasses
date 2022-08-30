@@ -1,0 +1,17 @@
+dataclasses do not accept mutable objects like lists as default
+attributes. To work around this, use 
+field(default_factory = function_that_returns_list())
+passing init=False to field() will disable setting something
+other than the default value.
+
+in the decorator, pass @dataclass(frozen=True) to disable the 
+modification of the object after initialization.
+
+_fuel_type denotes a private instance variable
+fuel_type denotes a public instance variable
+
+The reserve method in the Vehicle class, which is inherited by Car and Truck,
+looks like the kind of flow I could have used with invoice uploads,
+such that reserve is only called once. I could even use the *[]
+syntax to unpack a list into arguments if the different methods 
+take different numbers of functions.

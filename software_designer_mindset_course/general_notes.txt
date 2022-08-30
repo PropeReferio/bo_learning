@@ -1,0 +1,6 @@
+If you're patching everything, making changes in one place in your
+code, your design is pretty good. You're not making the same change
+in three/four different places.
+
+Make exercises out of the video "another creation example" and the
+following video "taking control over creation"

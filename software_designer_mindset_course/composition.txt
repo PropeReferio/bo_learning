@@ -1,0 +1,2 @@
+You can make a Class object an instance variable of another class to use
+composition.    

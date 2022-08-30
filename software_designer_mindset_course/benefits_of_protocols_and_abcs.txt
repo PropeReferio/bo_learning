@@ -1,0 +1,11 @@
+You don't want a long chain of inheritance. You want to be able 
+to reuse the code you write, "and that's why it's so important to use
+ABCs or Protocols." I think he's leading in to how we'll use those
+for composition... allowing to  "compose" elsewhere (reuse).
+
+ABCs allow for inheriting methods/instance variables... Protocols do not? 
+I may have that wrong.
+
+Protocols are generally cleaner when you don't need the ABC. "Belong more closely
+to the place that they are used." Good for contracts/interfaces, functions
+that take Protocols as arguments.
