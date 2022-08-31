@@ -15,3 +15,5 @@ ctrl + a, ctrl + e | go to start/end of line
 && vs. ; | both chain commands, but if the first command errors, ; will allow the second command to work
 tail -f any.logfile | -f will keep the tail up, and will update as the log fills with info.
 mount | column -t | pipe any command into column -t to put it into columns. Will be helpful to zoom out with ctrl + - to see the data.
+alt + DEL/Backspace | delete word before cursor
+alt + D | delete word after cursor

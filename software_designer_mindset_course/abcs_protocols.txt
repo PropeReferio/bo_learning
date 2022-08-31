@@ -1,0 +1,5 @@
+Protocols - better when mixing together with stuff from third party libraries, 
+or if you don't want to use inheritance.
+
+ABCs - better when you can define a bunch of methods that will be inherited by the 
+classes subclassing them.
