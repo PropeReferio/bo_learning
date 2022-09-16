@@ -1,0 +1,2 @@
+A higher order function accepts a function as a parameter, or returns a function.
+Imagine you are filtering customers based on age, height, income. Rather than writing 3 separate functions, You could have one function with a parameter is_eligible, call that function in three different places with 3 different lambdas for age, height, and income.

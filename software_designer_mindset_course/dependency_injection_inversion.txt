@@ -9,4 +9,4 @@ and pass it into the function as an argument. This also separates creation from 
 
 Dependency inversion: you make a protocol or an ABC which is the type of parameter received by the
 function/method, and this allows for "least knowledge." It also allows you to pass different kinds
-of objects following the ABC or Protocol.
+of objects following the ABC or Protocol. (Great for testing, you just create something following that Protocol).
