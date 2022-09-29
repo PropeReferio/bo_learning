@@ -17,3 +17,6 @@ tail -f any.logfile | -f will keep the tail up, and will update as the log fills
 mount | column -t | pipe any command into column -t to put it into columns. Will be helpful to zoom out with ctrl + - to see the data.
 alt + DEL/Backspace | delete word before cursor
 alt + D | delete word after cursor
+man -k | search for commands by keyword
+chmod u=rwx,g=rw,o=r fake.exe | set permissions for user, group, and others. Can also use + and - to add/remove.
+chmod 754 fake.exe | rwx for u, rx for g, r for o

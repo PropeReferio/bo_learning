@@ -1,0 +1,11 @@
+git fetch origin develop
+# Get commits, etc. without merging
+git branch -a 
+# shows all branches, fetched data may be in branch colored red
+git log origin/develop
+# view commits in the remote develop
+git checkout origin/develop
+git diff develop origin/develop
+# Two ways to look at the differences
+git merge origin/develop
+# merge those commits in
