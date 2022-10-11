@@ -20,3 +20,8 @@ alt + D | delete word after cursor
 man -k | search for commands by keyword
 chmod u=rwx,g=rw,o=r fake.exe | set permissions for user, group, and others. Can also use + and - to add/remove.
 chmod 754 fake.exe | rwx for u, rx for g, r for o
+ctrl + r : search through your recent history
+cat /etc/passwd | cut -d: -f1,6 | tr ":" " " | column -t | less |> 
+cat the file, select only certain columns with ':' as delimiter, 
+translate : to _, display as a table, pass it to less for easier viewing
+
