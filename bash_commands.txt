@@ -3,8 +3,11 @@ ctrl + l | clear screen, but you can still scroll back up.
 reset | like opening a new terminal. Will update env vars.
 pushd | change dir, add cwd to the stack.
 popd | take the last dir off the stack, and return to it.
+main.py & | start main.py in the background
 ctrl + z | minimize a program like vi in the foreground
-fg | return a minimized program to the foreground
+jobs | view jobs in the background
+fg {num} | return a minimized program to the foreground
+kill %{num} | kill a job from `jobs` in the background
 !! | refers to last command. `sudo !!` is useful when you forgot
 to elevate priveleges.
 history, then !97 | run the command that was #97 in your history
@@ -24,4 +27,6 @@ ctrl + r : search through your recent history
 cat /etc/passwd | cut -d: -f1,6 | tr ":" " " | column -t | less |> 
 cat the file, select only certain columns with ':' as delimiter, 
 translate : to _, display as a table, pass it to less for easier viewing
-
+scp ~/tst.txt IP_ADDY_KIOSK:~/ | secure copy tst.txt from your home dir to the home dir of the kiosk.
+watch cat db.json | Keep the output of cat db.json on the screen, refreshed every 2 seconds.
+htop, top, pstree | look at processes in an organized manner
