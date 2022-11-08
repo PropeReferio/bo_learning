@@ -1,0 +1,5 @@
+1. squash in merge in the PR UI.
+2. Put #21005 to refer to commit, put KST-95 (or something) to link to Jira tickets. Put these in commit messages so they persist.
+3. Use git rebase -i when PR from feature branch to develop.
+4. Use git merge when going from develop to production, canary, or other rc (to preserve history)	
+5. git commit --amend (--no-edit [dont change commit message]) (-m [write commit message without editor])

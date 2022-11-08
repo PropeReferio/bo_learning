@@ -5,12 +5,14 @@ pushd | change dir, add cwd to the stack.
 popd | take the last dir off the stack, and return to it.
 main.py & | start main.py in the background
 ctrl + z | minimize a program like vi in the foreground
+bg %1 | Run suspended (ctrl + z) process in the background
 jobs | view jobs in the background
 fg {num} | return a minimized program to the foreground
 kill %{num} | kill a job from `jobs` in the background
 !! | refers to last command. `sudo !!` is useful when you forgot
 to elevate priveleges.
 history, then !97 | run the command that was #97 in your history
+!re | run last command beginning with 're'
 HISTTIMEFORMAT="%Y-%m-%d %T " | set this to get datetime when you run history
 ctrl + +, ctrl + - | change font size
 ctrl + u | delete everything on your line

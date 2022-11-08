@@ -1,0 +1,30 @@
+NAVIGATION 
+z + enter | move current line to top of window
+:34, 34gg, 34G | go to line 34
+g ctrl g | see data about file and position
+dl | delete char to the right
+dj | delete current line, and line below
+D | delete from cursor to end of line
+d3w | delete 3 words
+2d3w | delete 3 words, 2 times
+dd | delete line
+
+HELP
+:h [command] | open help [at command docs]
+ctrl + w + w | switch between help docs and the file you were editing
+:h :qu [ctrl + d] | show commands that match 'qu' [use tab to rotate]
+ctrl + ] | in help file, jump like a hyperlink to selected text's help
+
+CLIPBOARD
+y2w | yank 2 word
+2P | put twice before cursor
+d$ | delete (cut) from cursor to end of line
+dd | delete (cut) entire line
+yy | yank (copy) whole line
+"fyy | copy current line to "f register
+"Fyy | append current line to "f register
+:reg | view all registers
+
+UNDO / REDO
+u | undo
+^r | redo

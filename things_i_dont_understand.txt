@@ -1,0 +1,9 @@
+1. Socket I/O handlers... can Daler show me?
+2. Global... threaded through...?
+	review flags, locks, queues before asking about this
+3. Flask server?
+4. What's Newman? Neuman? It's the slim kiosk.
+5. server.py - is this the flask server? yes.
+
+
+Be like Daler, sleuth first, ask later!
