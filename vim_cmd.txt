@@ -8,6 +8,34 @@ D | delete from cursor to end of line
 d3w | delete 3 words
 2d3w | delete 3 words, 2 times
 dd | delete line
+f> | Go to the first > on the current line
+F< | Go backward to the first < on the current line
+t>, T> | Same thing, but stops one char early
+; | repeat search same direction
+, | repeat search opposite direction
+df< | Delete from char to (and including) first <
+
+SEARCH
+/the + ENTER | go to first 'the' in file.
+?the + ENTER | go opposite direction.
+n N | cycle forward/back through search results.
+#, * | find the nearest word that's under the cursor
+:s/net/org/ | replace next "net" with "org" on cur line
+:s/net/org/g | replace all "net" with "org" on cur line
+:3s/net/org/g | replace all "net" with "org" on line 3
+:1,5s/net/org/g | replace all "net" with "org" on line 1 thru 5
+:.,$s/net/org/g | replace all "net" with "org" on cur line thru last line
+:%s/net/org/g | replace all "net" with "org" on all lines
+:/Global/,/Local/s/net/org/g | replace 'net' with 'org' between "Global" and "Local"
+:/Global/,$s/net/org/g | replace 'net' with 'org' between "Global" and the end.  
+To avoid escaping backslashes: :s#/var/spool#/usr/local# - replace first pattern with second
+
+CHANGE CASE
+~ | change case of selected char
+U | make uppercase
+u | make lowercase
+/andENTERcw&n.n. | go to "and", replace with "&", do the same
+for the next two "and"
 
 HELP
 :h [command] | open help [at command docs]
@@ -24,7 +52,19 @@ yy | yank (copy) whole line
 "fyy | copy current line to "f register
 "Fyy | append current line to "f register
 :reg | view all registers
+"ac3w | change 3 words, keep them in the "a reg
 
 UNDO / REDO
 u | undo
 ^r | redo
+
+INSERT / REPLACE
+I | start at beginning of line
+A | start at end of line
+O | start on new line above
+o | start on new line below
+R | overwrite characters at existing position
+r | overwrite single character
+
+JOIN
+5J | Join 5 lines together.
