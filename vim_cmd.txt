@@ -64,6 +64,15 @@ yy | yank (copy) whole line
 :reg | view all registers
 "ac3w | change 3 words, keep them in the "a reg
 
+MACROS
+qc, cmd, q | record to c register, end recording
+qC, cmd, q | Append to c register, end recording
+^G | get line count, good for applying a macro to a csv
+.,$@w | Use the @w macro on every line between current and end
+:27,35normal @w | Use the @w macro between lines 27 and 35
+You can store macros in .viminfo for long term use
+Better to store them in .vimrc
+
 UNDO / REDO
 u | undo
 ^r | redo
