@@ -3,3 +3,6 @@
 3. Use git rebase -i when PR from feature branch to develop.
 4. Use git merge when going from develop to production, canary, or other rc (to preserve history)	
 5. git commit --amend (--no-edit [dont change commit message]) (-m [write commit message without editor])
+6. Don't use commit --amend or rebase on public/shared commits
+
+7. git checkout branch_a; git rebase -i branch_b: "Rebase branch a's commits on top of branch b's"
