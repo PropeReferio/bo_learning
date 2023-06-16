@@ -1,0 +1,3 @@
+X - backspace
+. - repeat last command
+dB - delete back a word
