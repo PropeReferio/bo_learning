@@ -7,3 +7,6 @@ cc - change whole line
 g$~ - change case until end of line
 g~~ - change case of whole line
 gUw - Make whole next word uppercase.
+tb - search linewise to just before the next b
+* - go to the next occurence of highlighted word. Awesome for variables.
+# - same, but reverse
