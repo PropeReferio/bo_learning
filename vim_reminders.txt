@@ -2,6 +2,7 @@ X - backspace
 . - repeat last command
 dB - delete back a word
 "0 - contains the most recent yanked text, not deleted
+"" - contains most recently deleted text
 "F - append to f register
 cc - change whole line
 g$~ - change case until end of line
@@ -10,3 +11,5 @@ gUw - Make whole next word uppercase.
 tb - search linewise to just before the next b
 * - go to the next occurence of highlighted word. Awesome for variables.
 # - same, but reverse
+ci] - change everything inside the []
+ca] - change everything inside the [], and also the [] itself. The other text objects work the same way, such as ciw, caw.
